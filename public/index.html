@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Moniteur Risque Incendie - Temps Réel</title>
+    <meta name="description" content="Surveillance automatique du risque incendie dans le Sud de la France. Données temps réel mises à jour 3 fois par jour.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🔥 Moniteur Risque Incendie</h1>
+                </div>
+                <div id="system-status" class="system-status">
+                    🔄 Chargement...
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Dashboard Statistics -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-zones">-</div>
+                    <div class="stat-label">Zones surveillées</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-high-risk">-</div>
+                    <div class="stat-label">Zones à risque élevé</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-avg-risk">-</div>
+                    <div class="stat-label">Risque moyen (/5)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-last-update">-</div>
+                    <div class="stat-label">Dernière mise à jour</div>
+                </div>
+            </section>
+
+            <!-- Fire Risk Zones -->
+            <section class="zones-grid" id="zones-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>🔄 Chargement des données en cours...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>🤖 Données mises à jour automatiquement à 9h, 12h et 17h30</p>
+            <p>⚡ Propulsé par GitHub Actions • 💾 Hébergé sur GitHub Pages</p>
+            <p>Sources : Préfecture • Météo France • Géorisques</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

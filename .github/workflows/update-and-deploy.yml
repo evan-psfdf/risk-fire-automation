@@ -1,0 +1,31 @@
+{
+  "name": "fire-risk-monitor-github",
+  "version": "1.0.0",
+  "description": "🔥 Moniteur automatique du risque incendie - GitHub Pages",
+  "main": "scripts/update-data.js",
+  "scripts": {
+    "update-data": "node scripts/update-data.js",
+    "generate-json": "node scripts/generate-json.js",
+    "build": "npm run update-data && npm run generate-json",
+    "serve": "cd public && python -m http.server 8000"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TON-USER/TON-REPO.git"
+  },
+  "keywords": [
+    "fire-risk",
+    "monitoring",
+    "github-pages",
+    "automation"
+  ],
+  "author": "Toi",
+  "license": "MIT"
+}
